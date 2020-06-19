@@ -1,0 +1,227 @@
+*{
+    font-size: 1em;
+}
+
+#logo{
+    float: left;
+    width: 15%;
+    font-family: "Comic Sans MS";
+    font-size: 20;
+}
+
+
+
+#nav_links{
+    float: left;
+    width: 40%;
+    margin-left: 6%;
+    padding-top: 1%;
+}
+
+
+#login {
+    float: left;
+    width: 35%;
+    padding-top: 1%;
+    text-align: right;
+}
+
+
+#navigation {
+    padding-top: 2%;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-right: 4%;
+    font-weight: lighter;
+}
+
+#success{
+    font-size: 22px;
+}
+.link {
+    padding-bottom: 15px;
+}
+
+.underline {
+    border-bottom: black 2px solid;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+#loginForm #button{
+    margin-top: 10px;
+}
+
+#loginForm {
+    margin-bottom: 100px;
+}
+
+#addTicketForm #button{
+    margin-top: 10px;
+}
+
+#addTicketForm {
+    margin-bottom: 50px;
+}
+
+#ticketList {
+    margin-bottom: 100px;
+    padding: 5%;
+
+}
+
+#errorMessage {
+    color: red;
+}
+main{
+    clear: both;
+}
+footer {
+    border-top: 1px solid #f2f2f2;
+    padding: 16px 2%;
+    background: #fff;
+}
+
+footer li{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 1%;
+}
+
+#footer_links {
+    float: left;
+    width: 80%;
+}
+
+#footer_copyright {
+    float: left;
+    width: 20%;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.welcome{
+    float: right;
+}
+
+
+#messageBox{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 2%;
+}
+
+#ticketDetails {
+    padding: 2%;
+
+}
+
+.messageStampLeft{
+    float: left;
+    width: 10%;
+}
+
+.leftText{
+    padding-left: 2%;
+    float: left;
+    width: 60%;
+}
+
+.rightText{
+    padding-left: 2%;
+    float: left;
+    width: 60%;
+}
+
+.date {
+    text-align: right;
+    padding-top: 5px    ;
+    float: left;
+    width: 30%;
+    font-size: smaller;
+}
+
+
+.left{
+    float: left;
+    width: 40%;
+}
+.clear {
+    clear: both;
+}
+
+.messageStampRight{
+    padding-left: 2%;
+    float: left;
+    width: 60%;
+}
+
+.messageLeft{
+
+    background-color: #ebebeb;
+    border-radius: 15px 15px 15px 0;
+    padding: 15px;
+    margin: 10px 0 0 20px;
+    width: 75%;
+}
+
+.messageRight{
+    border: 2px solid #005F8F;
+    background-color: #05728f;
+    border-radius: 15px 15px 0 15px;
+    padding: 15px;
+    margin: 10px 0 0 20px;
+    margin-left: 25%;
+    width: 75%;
+}
+
+#message {
+    margin-top: 10px;
+    border: 0px none;
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#writeMessage {
+    position: relative;
+}
+#sendButton {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #005F8F;
+}
+
+.yellow{
+    color: orange;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+#changeStatus{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
+
+}
+

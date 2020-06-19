@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ticket management system - Macrosoft.inc
+    *Each ticket MUST have a ticket ticket number. Ticket IDs start with digit-5.
+    *Each ticket MUST have a PRIORITY. It can be 'High','Medium' or 'Low'
+    *Each ticket MUST have a DATE. It should be in DD MM YYYY format
+    *Each ticket MUST have a STATUS. It can be either 'Pending' or 'Resolved'. 
+    *Messages are OPTIONAL. Messages from clients should have attribute 'Client' and messages   from Admins should have attribute 'Admin'.
+    *Each ticket MUST have a subject which will have a description and an attribute which is     optional. But if the attribute is given it should be either 'OS' or 'Application'.
+    *Each ticket MUST have a userid. It should start with digit-1. 
+-->
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+        <ticket>
+            <id priority="Low">1</id>
+            <date>
+                <dd>31</dd>
+                <mm>03</mm>
+                <yyyy>2020</yyyy>
+            </date>
+            <status>Pending</status>
+            <subject type="OS">Windows is not working</subject>
+            <messages>
+                <message user="Client" date="2020-03-29T00:35:16+00:00">Windows is not booting for the last 2 days. </message>
+                <message user="Admin" date="2020-03-30T20:43:46-04:00">Which version of windows are you using ? </message>
+            </messages>
+            <userid>10004</userid>
+        </ticket>
+        <ticket>
+            <id priority="High">2</id>
+            <date>
+                <dd>31</dd>
+                <mm>03</mm>
+                <yyyy>2020</yyyy>
+            </date>
+            <status>Resolved</status>
+            <subject type="Hardware">Laptop is not working</subject>
+            <messages>
+                <message user="Client" date="2020-03-28T01:08:36+00:00">Laptop is not booting </message>
+                <message user="Admin" date="2020-03-30T21:09:04-04:00">Okay</message>
+                <message user="Admin" date="2020-03-30T21:15:36-04:00">Okay</message>
+                <message user="Admin" date="2020-03-30T22:16:47-04:00">Let me take a look at it</message>
+                <message user="Client" date="2020-03-30T22:17:47-04:00">Thanks</message>
+            </messages>
+            <userid>10001</userid>
+        </ticket>
+        <ticket>
+            <id priority="Medium">3</id>
+            <date>
+                <dd>31</dd>
+                <mm>03</mm>
+                <yyyy>2020</yyyy>
+            </date>
+            <status>Pending</status>
+            <subject type="Application">MS Word not working</subject>
+            <messages>
+                <message user="Client" date="2020-03-31T04:37:02+00:00">MS word is not opening</message>
+                <message user="Admin" date="2020-03-31T00:38:04-04:00">Okay</message>
+                <message user="Client" date="2020-03-31T00:38:54-04:00">Help please</message>
+                <message user="Admin" date="2020-03-31T00:39:24-04:00">Yes working on it</message>
+                <message user="Client" date="2020-03-31T00:48:38-04:00">Thanks</message>
+            </messages>
+            <userid>10001</userid>
+        </ticket>
+        <ticket>
+            <id priority="High">5</id>
+            <date>
+                <dd>01</dd>
+                <mm>04</mm>
+                <yyyy>2020</yyyy>
+            </date>
+            <status>Resolved</status>
+            <subject type="Hardware">Laptop is not working</subject>
+            <messages>
+                <message user="Client" date="2020-04-01T20:12:13-04:00">It's just showing a blank screen</message>
+                <message user="Admin" date="2020-04-01T20:13:02-04:00">When did you buy the laptop ? </message>
+                <message user="Client" date="2020-04-01T20:14:30-04:00">2 months back</message>
+                <message user="Admin" date="2020-04-01T20:15:30-04:00">Okay. I Will fix it. </message>
+            </messages>
+            <userid>10005</userid>
+        </ticket>
+    <ticket><id priority="High">6</id><date><dd>02</dd><mm>06</mm><yyyy>2020</yyyy></date><status>Resolved</status><subject type="Hardware">Keyboard not working</subject><messages><message user="Client" date="2020-06-02T11:07:16-04:00">It has not been working for 2 days</message><message user="Client" date="2020-06-02T11:07:30-04:00">Is anyone there ?</message><message user="Admin" date="2020-06-02T11:07:48-04:00">When did you buy it ? </message></messages><userid>10009</userid></ticket><ticket><id priority="Medium">7</id><date><dd>05</dd><mm>06</mm><yyyy>2020</yyyy></date><status>Pending</status><subject type="Hardware">alamdar</subject><messages><message user="Client" date="2020-06-05T00:14:14-04:00">ahello</message><message user="Client" date="2020-06-05T00:14:28-04:00"/><message user="Client" date="2020-06-05T00:14:35-04:00"/><message user="Client" date="2020-06-05T00:14:39-04:00">hello</message><message user="Admin" date="2020-06-05T00:14:40-04:00">Poda baadu </message><message user="Client" date="2020-06-05T00:14:53-04:00">hello</message><message user="Client" date="2020-06-05T00:15:03-04:00">Poda punda</message></messages><userid>10010</userid></ticket><ticket><id priority="Medium">8</id><date><dd>08</dd><mm>06</mm><yyyy>2020</yyyy></date><status>Pending</status><subject type="Hardware">Phone is not working</subject><messages><message user="Client" date="2020-06-08T14:29:17-04:00">I'm not able to make calls</message><message user="Admin" date="2020-06-08T14:29:32-04:00">What exactly is the issue ? </message><message user="Client" date="2020-06-08T14:29:49-04:00">I can't make calls</message></messages><userid>10011</userid></ticket></tickets>

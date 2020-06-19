@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ticket management system - Macrosoft.inc
+    *Each ticket MUST have a ticket ticket number. Ticket IDs start with digit-5.
+    *Each ticket MUST have a PRIORITY. It can be 'High','Medium' or 'Low'
+    *Each ticket MUST have a DATE. It should be in DD MM YYYY format
+    *Each ticket MUST have a STATUS. It can be either 'Pending' or 'Resolved'. 
+    *Messages are OPTIONAL. Messages from clients should have attribute 'Client' and messages   from Admins should have attribute 'Admin'.
+    *Each ticket MUST have a subject which will have a description and an attribute which is     optional. But if the attribute is given it should be either 'OS' or 'Application'.
+    *Each ticket MUST have a userid. It should start with digit-1. 
+-->
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+    <ticket>
+        <id priority="High">50001</id>
+        <date>
+            <dd>01</dd>
+            <mm>09</mm>
+            <yyyy>2019</yyyy>
+        </date>
+        <status>Resolved</status>
+        <subject type="OS">Windows not updating</subject>
+        <messages>
+            <message user="Admin">What is the version of windows? </message>
+            <message user="Client">The version is Windows 10</message>
+            <message user="Admin">How long have you been facing this issue ? </message>
+            <message user="Client">For the past 2 weeks</message>
+        <message user="Client">Are you there ? </message><message user="Admin">Yes. Let me work on that. </message><message user="Admin">There you go. It has been fixed. </message></messages>
+        <userid>10001</userid>
+    </ticket>
+
+    <ticket>
+        <id priority="Medium">50002</id>
+        <date>
+            <dd>20</dd>
+            <mm>09</mm>
+            <yyyy>2019</yyyy>
+        </date>
+        <status>Pending</status>
+        <subject type="Application">MS Office not working</subject>
+        <messages>
+            <message user="Admin">Can you please elaborate on the issue? </message>
+            <message user="Client">I'm getting a message asking me to enter the key</message>
+            <message user="Admin">Please check your email for the license key</message>
+            <message user="Admin">You would have received a mail on the date of purchase</message>
+            <message user="Client">Yes found it. Its working now. </message>
+            <message user="Admin">Glad to hear. Can I close this ticket?</message>
+            <message user="Client">Yes. Thank you! </message>
+        </messages>
+        <userid>10003</userid>
+    </ticket>
+    <ticket>
+        <id priority="Low">50003</id>
+        <date>
+            <dd>20</dd>
+            <mm>09</mm>
+            <yyyy>2021</yyyy>
+        </date>
+        <status>Pending</status>
+        <subject type="Application">iPhone not working</subject>
+        <messages>
+            <message user="Admin">Can you please elaborate on the issue? </message>
+            <message user="Client">I'm getting a message asking me to enter the key</message>
+            <message user="Admin">Please check your email for the license key</message>
+        <message user="Admin">Why ? </message></messages>
+        <userid>10001</userid>
+    </ticket>
+    <ticket>
+        <id priority="Medium">50004</id>
+        <date>
+            <dd>29</dd>
+            <mm>03</mm>
+            <yyyy>2020</yyyy>
+        </date>
+        <status>Pending</status>
+        <subject type="Application">Excel not working</subject>
+        <messages>
+            <message>Not opening</message>
+        </messages>
+        <userid>10003</userid>
+    </ticket>
+    <ticket>
+        <id priority="High">50005</id>
+        <date>
+            <dd>29</dd>
+            <mm>03</mm>
+            <yyyy>2020</yyyy>
+        </date>
+        <status>Resolved</status>
+        <subject type="Hardware">Keyboard not working</subject>
+        <messages>
+            <message>My laptop keyboard is not working properly</message>
+            <message user="Admin">Okay. Let me check that. </message>
+        </messages>
+        <userid>10003</userid>
+    </ticket>
+    <ticket>
+        <id priority="High">50006</id>
+        <date>
+            <dd>30</dd>
+            <mm>03</mm>
+            <yyyy>2020</yyyy>
+        </date>
+        <status>Pending</status>
+        <subject type="Application">Word not working</subject>
+        <messages>
+            <message>MS word is not opening</message>
+            <message user="Client">Its not working. </message>
+            <message user="Admin">Let me take a look at it</message>
+        </messages>
+        <userid>10001</userid>
+    </ticket>
+</tickets>

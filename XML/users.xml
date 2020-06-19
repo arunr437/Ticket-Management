@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    *Each USER MUST have an attribute 'type'. It can either be 'Client' or 'Admin'.
+    *Each USER MUST have an ID. It should start with digit-1(Client) or digit-9(Admin).
+    *Each USER MUST have a password. Should start with an alphabet. Can contain only alpahets and numbers. Should be between 4-10 characters
+    *Each USER MUST have a firstname and lastname. Middlenames are optional.
+    *Each USER Must have a coutry. Countries should be only the values mentioned in the restriction enumeration. 
+    *Each USER MUST have an 'email id'. It should contain character '@'.
+-->
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+        <user type="Client">
+            <id>10001</id>
+            <password>password</password>
+            <name>
+                <firstname>Sergio</firstname>
+                <middlename>Kun</middlename>
+                <lastname>Aguero</lastname>
+            </name>
+            <country>Canada</country>
+            <email>sergio@gmail.com</email>
+        </user>
+
+        <user type="Admin">
+            <id>10002</id>
+            <password>password</password>
+            <name>
+                <firstname>Pep</firstname>
+                <lastname>Guardiola</lastname>
+            </name>
+            <country>USA</country>
+            <email>pepguardiola@gmail.com</email>
+        </user>
+
+        <user type="Client">
+            <id>10003</id>
+            <password>password</password>
+            <name>
+                <firstname>Kevin</firstname>
+                <middlename>De</middlename>
+                <lastname>Bruyne</lastname>
+            </name>
+            <country>Canada</country>
+            <email>kdb@gmail.com</email>
+        </user>
+        <user type="Client">
+            <id>10004</id>
+            <password>password</password>
+            <name>
+                <firstname>Arun</firstname>
+                <middlename>Swaminathan</middlename>
+                <lastname>Rathinam</lastname>
+            </name>
+            <country>Canada</country>
+            <email>arunswaminathanr@yahoo.co.in</email>
+        </user>
+        <user type="Client">
+            <id>10005</id>
+            <password>password</password>
+            <name>
+                <firstname>Ragini</firstname>
+                <middlename/>
+                <lastname>Shirwalkar</lastname>
+            </name>
+            <country>Canada</country>
+            <email>shirwalkarragini@gmail.com</email>
+        </user>
+        <user type="Client">
+            <id>10006</id>
+            <password>password</password>
+            <name>
+                <firstname>Anshuk</firstname>
+                <middlename/>
+                <lastname>Agarwal</lastname>
+            </name>
+            <country>Canada</country>
+            <email>anshuk@gmail.com</email>
+        </user>
+        <user type="Client">
+            <id>10007</id>
+            <password>password</password>
+            <name>
+                <firstname>Zameer</firstname>
+                <middlename/>
+                <lastname>Chariwalla</lastname>
+            </name>
+            <country>Canada</country>
+            <email>zameer@gmail.com</email>
+        </user>
+    <user type="Client"><id>10008</id><password>password</password><name><firstname>Smith</firstname><middlename>Smith</middlename><lastname>Smith</lastname></name><country>Canada</country><email>smith@gmail.com</email></user><user type="Client"><id>10009</id><password>password</password><name><firstname>John</firstname><middlename>John</middlename><lastname>John</lastname></name><country>Canada</country><email>john@gmail.com</email></user><user type="Client"><id>10010</id><password>hahahahahaha</password><name><firstname>Alamdar</firstname><middlename>Ali</middlename><lastname>k</lastname></name><country>Canada</country><email>alamdar.cse@gmail.com</email></user><user type="Client"><id>10011</id><password>password</password><name><firstname>Ragini</firstname><middlename/><lastname>Shirwalkar</lastname></name><country>Canada</country><email>admin@gmail.com</email></user></users>
